@@ -112,11 +112,11 @@ class tsl2591:
   /**
   Disables the sensor and does a power down
   */
-  disable:
+  disable -> none:
     reg_.write_u8 (COMMAND_BIT_ | ENABLE_REG_) ENABLE_POFF_AENOFF_
-    
+
   /**
   Full reset of sensor.
   */
-  reset:
+  reset -> none:
     reg_.write_u8 (COMMAND_BIT_ | CONTROL_REG_) CONTROL_SRESET
