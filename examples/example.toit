@@ -24,7 +24,7 @@ main:
   sleep --ms=200
   50.repeat:
     raw = sensor.read_raw
-    print_ "Raw:$(raw[0]), $(raw[1])" // pring_ <-- Only print to serial output
+    print_ "Raw:$(raw[0]), $(raw[1])" // print_ <-- Only print to serial output
     sleep --ms = 200
     full = sensor.read_full_spectrum
     print_ "Full spectrum:$(full)"
