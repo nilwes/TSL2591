@@ -21,7 +21,7 @@ main:
 
   sensor.enable --gain = "medium" --time = 200
 
-  sleep --ms=200
+  sleep --ms=200 // Required pause to allow for the ADC to integrate
   50.repeat:
     raw = sensor.read_raw
     print_ "Raw:$(raw[0]), $(raw[1])" // print_ <-- Only print to serial output
